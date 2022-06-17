@@ -7,7 +7,7 @@
     return "rgb("+r+", "+g+", "+b+")";
   }
   export default function generateRandomColors(num){
-    for(let i=0;i<num;i++){
+    for(let i=0;i<6;i++){
       coloresRandom[i]=randomColor();
     }
     return coloresRandom
