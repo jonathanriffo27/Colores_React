@@ -1,4 +1,3 @@
- let coloresRandom = []
 
  function randomColor(){
     let r=Math.floor(Math.random()*256);
@@ -7,8 +6,9 @@
     return "rgb("+r+", "+g+", "+b+")";
   }
   export default function generateRandomColors(num){
-    for(let i=0;i<6;i++){
-      coloresRandom[i]=randomColor();
+    let arr = []
+    for(let i=0;i<num;i++){
+      arr[i]=randomColor();
     }
-    return coloresRandom
+    return arr
   }
